@@ -26,5 +26,12 @@ database.once('connected', () => {
     console.log('Database Connected');
 })
 
-
 app.use('/api', routes)
+
+app.get('/', (req, res) => {
+  res.send('Server is running');  
+});
+
+
+
+
