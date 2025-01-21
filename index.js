@@ -29,7 +29,7 @@ database.once('connected', () => {
 app.use('/api', routes)
 
 app.get('/', (req, res) => {
-  res.send('Server is running');  
+  res.send('Server is running: DataBase');  
 });
 
 
